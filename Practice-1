@@ -1,0 +1,14 @@
+height = float(input("enter the height in m: "))
+weight = float(input("enter the weight in kg:"))
+body_mass_index = weight / height**2
+body_mass_index = int(body_mass_index)
+if body_mass_index <= 18.5:
+  print(f"your bmi is {body_mass_index} you are UNDER WEIGHT")
+elif body_mass_index <= 25:
+  print(f"your bmi is {body_mass_index} you are NORMAL WEIGHT")
+elif body_mass_index <= 30:
+  print(f"your bmi is {body_mass_index} you are OVERWEIGHT")
+elif body_mass_index <= 35:
+  print(f"your bmi is {body_mass_index} you are OBESE")
+else:
+  print(f"your bmi is {body_mass_index} you are CLINICALLY OBESE")
